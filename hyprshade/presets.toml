@@ -1,0 +1,8 @@
+[dim-25.parameters]
+dim_factor = 0.75
+
+[dim-50.parameters]
+dim_factor = 0.5
+
+[dim-75.parameters]
+dim_factor = 0.25

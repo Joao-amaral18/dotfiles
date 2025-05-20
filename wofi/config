@@ -1,0 +1,8 @@
+show = drun
+width = 800
+height = 600
+prompt = Search:
+hide_scroll = true
+allow_markup = true
+term = alacritty
+show-icons = true

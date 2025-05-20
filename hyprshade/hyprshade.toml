@@ -1,0 +1,27 @@
+# hyprshade.toml - Configuration for screen dimming
+
+# Define a shader for varying levels of screen dimming
+shaders:
+  # Slight dimming (25%)
+  dim-25 = { path = "~/.config/hypr/shaders/dim.frag" }
+  # Moderate dimming (50%)
+  dim-50 = { path = "~/.config/hypr/shaders/dim.frag" }
+  # Strong dimming (75%)
+  dim-75 = { path = "~/.config/hypr/shaders/dim.frag" }
+
+# Define keyboard shortcuts for toggling dimming levels
+keybinds:
+  # Toggle slight dimming with Super+Alt+1
+  toggle-dim-25 = "SUPER ALT, 1"
+  # Toggle moderate dimming with Super+Alt+2
+  toggle-dim-50 = "SUPER ALT, 2"
+  # Toggle strong dimming with Super+Alt+3
+  toggle-dim-75 = "SUPER ALT, 3"
+  # Disable all shaders with Super+Alt+0
+  disable = "SUPER ALT, 0"
+
+# Define executable triggers for dimming
+# These will be used with the wofi power menu
+execs:
+  # When wofi power menu opens, apply the dim-50 shader
+  wofi-power-menu = { shader = "dim-50", idle_only = false }

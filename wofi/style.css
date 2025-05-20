@@ -1,0 +1,75 @@
+window {
+  margin: 8px;
+  padding: 6px;
+  border: 2px solid #282828;
+  background-color: #1d2021; /* Slightly darker background for contrast */
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  color: #ebdbb2;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+#input {
+  background-color: #3c3836;
+  color: #ebdbb2;
+  border: 2px solid #d79921; /* Slightly thicker border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px;
+  margin-bottom: 6px; /* Space between input and results */
+  font-weight: bold; /* Make input text stand out */
+}
+
+#input:focus {
+  border-color: #fabd2f; /* Brighter color when focused */
+  outline: none;
+}
+
+#inner-box {
+  margin-top: 12px;
+  background-color: #282828;
+  border-radius: 12px; /* Match outer container roundness */
+  padding: 2px;
+}
+
+#entry {
+  background-color: #3c3836;
+  padding: 16px 20px;
+  margin: 4px;
+  border-radius: 6px;
+  transition: all 0.15s ease; /* Smooth transition for hover/select */
+}
+
+#entry:selected {
+  background-color: #d79921;
+  color: #282828;
+  font-weight: bold;
+  transform: scale(1.02); /* Slightly enlarge selected item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#entry:hover:not(:selected) {
+  background-color: #504945; /* Subtle hover effect */
+}
+
+image {
+  min-width: 24px;
+  min-height: 24px;
+  margin-right: 12px;
+  opacity: 0.85; /* Slightly soften icons */
+}
+
+#entry:selected image {
+  opacity: 1; /* Full opacity for selected item icons */
+}
+
+/* Optional: Style scrollbar for better visual consistency */
+scrollbar {
+  background-color: #282828;
+  border-radius: 8px;
+}
+
+scrollbar slider {
+  background-color: #a89984; /* Muted gruvbox color */
+  border-radius: 8px;
+}
